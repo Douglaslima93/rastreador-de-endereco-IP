@@ -5,17 +5,19 @@
 
 .container-ip {
     width: 100%;
-    height: 50vh;
     background-image: url('../img/pattern-bg-desktop.png');
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
+    
 }
 
 .texto h1{
     color: white;
+    margin-top: 50px;
 }
 
 .search-id {
@@ -43,6 +45,10 @@
     cursor: pointer;
 }
 
+.search-id button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .search-id button img {
     margin: auto;
     cursor: pointer;
@@ -55,7 +61,7 @@
     align-items: center;
     width: 80%;
     height: 15vh;
-    background-color: red;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -67,8 +73,55 @@
 .container-dados span {
     color: hsl(0, 0%, 0%);
     font-size: 25px;
+    text-align: left;
+}
+
+.container-itens{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-maps {
+    background-color: hsl(0, 0%, 17%);
 }
 
 #map { 
     height: 100vh; 
+}
+
+/*responsivo*/
+
+@media screen and (max-width: 350px) {
+    .container-ip {
+        background-image: url('../img/pattern-bg-mobile.png');
+    }
+
+    .search-id input {
+        width: 250px;
+        height: 8vh;
+        font-size: 15px;
+    }
+
+    .container-dados {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:flex-start;
+        width: 80%;
+        height: 80vh;
+    }
+
+    .container-dados span {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .container-itens{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        
+    }
 }

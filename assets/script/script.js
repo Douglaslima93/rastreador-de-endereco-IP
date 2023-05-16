@@ -26,7 +26,7 @@ function botao() {
         }).addTo(map);
         
         L.marker([ip.location.lat,ip.location.lng]).addTo(map)
-            .bindPopup('A pretty CSS popup.<br> Easily customizable.')
+            .bindPopup('you are here.')
             .openPopup();
             //console.log(map)
     })
