@@ -11,8 +11,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    
+    gap: 50px;
+    position: relative;
 }
 
 .texto h1{
@@ -63,17 +63,20 @@
     height: 15vh;
     background-color: white;
     border-radius: 10px;
+    position: relative;
+
 }
 
 .container-dados p {
     color: hsl(0, 0%, 17%);
-    
+    font-size: 18px;
 }
 
 .container-dados span {
     color: hsl(0, 0%, 0%);
     font-size: 25px;
     text-align: left;
+    font-size: 20px;
 }
 
 .container-itens{
@@ -84,10 +87,15 @@
 
 .container-maps {
     background-color: hsl(0, 0%, 17%);
+    position: relative;
+    top: -40px;
+    mix-blend-mode: color-burn;
 }
 
 #map { 
+    width: 100%;
     height: 100vh; 
+    
 }
 
 /*responsivo*/
@@ -100,14 +108,13 @@
     .search-id input {
         width: 250px;
         height: 8vh;
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .container-dados {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items:flex-start;
         width: 80%;
         height: 80vh;
     }
@@ -122,6 +129,28 @@
         flex-direction: column;
         gap: 10px;
         align-items: center;
+    }
+
+    .container-maps {
+        top: -346px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container-dados {
+        width: 85%;
         
+    }
+
+    .container-dados p {
+        font-size: 15px;
+    }
+    
+    .container-dados span {
+        font-size: 15px;
+    }
+
+    .container-maps {
+            top: -20px;
     }
 }
