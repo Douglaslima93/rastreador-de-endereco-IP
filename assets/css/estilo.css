@@ -3,6 +3,10 @@
     font-family: 'Rubik', sans-serif;
 }
 
+main {
+    width: 100vW;
+}
+
 .container-ip {
     width: 100%;
     background-image: url('../img/pattern-bg-desktop.png');
