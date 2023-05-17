@@ -11,6 +11,7 @@ main {
     width: 100%;
     background-image: url('../img/pattern-bg-desktop.png');
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -92,7 +93,7 @@ main {
 .container-maps {
     background-color: hsl(0, 0%, 17%);
     position: relative;
-    top: -40px;
+    
     mix-blend-mode: color-burn;
 }
 
@@ -135,26 +136,4 @@ main {
         align-items: center;
     }
 
-    .container-maps {
-        top: -346px;
-    }
 }
-/*
-@media screen and (max-width: 750px) {
-    .container-dados {
-        width: 85%;
-        
-    }
-
-    .container-dados p {
-        font-size: 15px;
-    }
-    
-    .container-dados span {
-        font-size: 15px;
-    }
-
-    .container-maps {
-            top: -20px;
-    }
-}*/
